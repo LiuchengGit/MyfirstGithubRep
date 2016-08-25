@@ -17,7 +17,8 @@ jintArray c_hello(JNIEnv *env, jobject cls, jintArray arr)
 	jint *oarr;
 	jintArray rarr;
 	
-	jint i, n = 0;
+	jint i, n = 1;
+	
 	carr = (*env)->GetIntArrayElements(env, arr, NULL);
 	if (carr == NULL) {
 		return 0; /* exception occurred */
